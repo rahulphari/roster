@@ -80,8 +80,10 @@
                 <i data-lucide="calendar-clock" class="w-5 h-5 text-white"></i>
             </div>
             <div>
-                <h1 class="font-bold text-slate-800 tracking-tight leading-tight">Roster Studio</h1>
-                <p class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">V9.13 Smart Ext</p>
+                <!-- 1. Name Change -->
+                <h1 class="font-bold text-slate-800 tracking-tight leading-tight">Roster Studio Pro</h1>
+                <!-- 2. Version Change -->
+                <p class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">🦅 Black Falcons (ROKA)</p>
             </div>
         </div>
         
@@ -94,11 +96,34 @@
                 <i data-lucide="database" class="w-5 h-5 group-hover:text-blue-500 transition-colors"></i> 
                 <span class="font-medium">Data Hub</span>
             </button>
+
+            <!-- Embedded User Guides -->
+            <div class="mt-6 px-2">
+                <h4 class="text-[10px] font-bold text-slate-400 uppercase mb-3 px-2 tracking-wider">Knowledge Base</h4>
+                <div class="grid grid-cols-1 gap-2">
+                    <a href="https://docs.google.com/document/d/18KbvFOntQYTmNxvulUZjsXbjJRi1TRMnHRADwl56izo/edit?tab=t.0" target="_blank" class="flex items-center gap-2 px-3 py-2 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-100 transition-all text-xs font-medium group">
+                        <span class="w-5 h-5 rounded bg-white flex items-center justify-center text-[10px] shadow-sm">EN</span>
+                        <span>English Guide</span>
+                        <i data-lucide="external-link" class="w-3 h-3 ml-auto opacity-50 group-hover:opacity-100"></i>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1zsmW8GmejnxSi-XQh4iJF7SEb1GLqGo6YgBPdhmk6VM/edit?tab=t.0" target="_blank" class="flex items-center gap-2 px-3 py-2 rounded-lg bg-orange-50 hover:bg-orange-100 text-orange-700 border border-orange-100 transition-all text-xs font-medium group">
+                        <span class="w-5 h-5 rounded bg-white flex items-center justify-center text-[10px] shadow-sm">HI</span>
+                        <span>Hindi Guide</span>
+                        <i data-lucide="external-link" class="w-3 h-3 ml-auto opacity-50 group-hover:opacity-100"></i>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1TKi4ks9xGB8StuSkiIkczNzsjCf_T86RBLIPJI2pSFw/edit?tab=t.0" target="_blank" class="flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-100 transition-all text-xs font-medium group">
+                        <span class="w-5 h-5 rounded bg-white flex items-center justify-center text-[10px] shadow-sm">ML</span>
+                        <span>Kannada Guide</span>
+                        <i data-lucide="external-link" class="w-3 h-3 ml-auto opacity-50 group-hover:opacity-100"></i>
+                    </a>
+                </div>
+            </div>
         </nav>
 
         <div class="p-6">
             <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
-                <h4 class="text-xs font-bold text-slate-400 uppercase mb-2">Quick Actions</h4>
+                <!-- 5. Header Change -->
+                <h4 class="text-xs font-bold text-slate-400 uppercase mb-2">Planning, Perfected</h4>
                 <button onclick="openGenerateModal()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-sm">
                     <i data-lucide="sparkles" class="w-4 h-4"></i> Auto-Generate
                 </button>
@@ -142,7 +167,8 @@
                             <div class="flex-1">
                                 <p class="text-xs text-slate-400 font-bold uppercase tracking-wider mb-2">Active Policy & Matrix</p>
                                 <div class="text-sm font-medium text-slate-700 space-y-1" id="snap-rules-container">
-                                    <p>Global: Min <span id="snap-min">3</span>d | Max <span id="snap-max">6</span>d</p>
+                                    <!-- 4. Global to Shift -->
+                                    <p>Shift: Min <span id="snap-min">12</span>d | Max <span id="snap-max">15</span>d</p>
                                     <div class="text-xs text-slate-500 mt-2 grid grid-cols-2 gap-x-4 gap-y-1" id="snap-matrix-list">
                                         <!-- Injected Matrix -->
                                         <span class="italic">No policy loaded.</span>
@@ -303,12 +329,14 @@
                             <div class="space-y-5">
                                 <div>
                                     <label class="text-sm font-medium text-slate-600 block mb-1.5">Min Days (Stability)</label>
-                                    <input type="number" id="conf-min-days" value="3" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
+                                    <!-- 6. Default Min Days: 12 -->
+                                    <input type="number" id="conf-min-days" value="12" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
                                     <p class="text-[10px] text-slate-400 mt-1">Min consecutive days before swap.</p>
                                 </div>
                                 <div>
                                     <label class="text-sm font-medium text-slate-600 block mb-1.5">Max Days (Burnout)</label>
-                                    <input type="number" id="conf-max-days" value="6" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
+                                    <!-- 7. Default Max Days: 15 -->
+                                    <input type="number" id="conf-max-days" value="15" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
                                     <p class="text-[10px] text-slate-400 mt-1">Max days before Shift Rotation.</p>
                                 </div>
                             </div>
@@ -367,7 +395,7 @@
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-slate-800">Generate Roster</h3>
-                    <p class="text-xs text-slate-500">Engine V9.13 Smart Ext</p>
+                    <p class="text-xs text-slate-500">Engine V9.14 Stable WO</p>
                 </div>
             </div>
             
@@ -404,7 +432,7 @@
         </div>
     </div>
 
-    <!-- LOGIC SCRIPT (V9.13) -->
+    <!-- LOGIC SCRIPT (V9.14) -->
     <script>
         // --- 1. STATE & VARS ---
         let employees = []; 
@@ -433,7 +461,9 @@
             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
             const btn = document.getElementById(`btn-${tabId}`);
             if(btn) btn.classList.add('active');
-            const headers = { 'dashboard': { t: 'Dashboard', s: 'Operational Overview' }, 'data': { t: 'Data Hub', s: 'Import & Analysis' } };
+            
+            // 3. Operational Overview to Planning, Perfected
+            const headers = { 'dashboard': { t: 'Dashboard', s: 'Planning, Perfected' }, 'data': { t: 'Data Hub', s: 'Import & Analysis' } };
             if(headers[tabId]) { document.getElementById('header-title').textContent = headers[tabId].t; document.getElementById('header-subtitle').textContent = headers[tabId].s; }
         }
 
@@ -743,7 +773,7 @@
             document.getElementById('roster-footer').classList.add('hidden');
         }
 
-        // --- 6. GENERATION LOGIC (V9.13 Optimized) ---
+        // --- 6. GENERATION LOGIC (V9.14 Optimized) ---
         function openGenerateModal() {
             const modal = document.getElementById('gen-modal');
             if (!modal) { console.error("Gen Modal not found"); return; } // Safety
@@ -785,81 +815,46 @@
                     let forceWO = false;
                     let note = "";
                     
-                    const validWODays = [(emp.prefWO + 6) % 7, emp.prefWO, (emp.prefWO + 1) % 7];
-                    const isPrefWODay = validWODays.includes(currentDayOfWeek);
+                    const isPrefWODay = (currentDayOfWeek === emp.prefWO);
+                    // Pref-1 Logic: If Pref is Sunday (0), Pref-1 is Saturday (6).
+                    const isPrefMinus1 = ((currentDayOfWeek + 1) % 7 === emp.prefWO);
 
-                    // --- 1. GLOBAL LIMIT: Max 6 days work -> 7th day must be W/O ---
-                    // V9.13 Relaxed to >=7 to allow the "Extend 2 days" scenario which might push to 7th day work
-                    // Standard rule is Max 6 work. But prompt asked for extension if close to Pref W/O.
-                    // This is a safety net.
+                    // --- 1. GLOBAL LIMIT: ABSOLUTE CAP ---
+                    // "Before exceeding 7 days" -> Max work = 7 days. W/O forced on 8th.
+                    // But preference is for gap <= 6 days.
                     if (emp.daysSinceWO >= 7) {
                          forceWO = true;
-                         note += "[Max Work] ";
+                         note += "[Max 7d] ";
                     }
 
-                    // --- 2. C-SHIFT LOGIC (V9.13 Smart Ext/Red) ---
-                    if (!forceWO && emp.currentShift === 'C') {
-                        const streak = emp.currentStreak;
-                        const daysWorked = emp.daysSinceWO;
-                        const minShift = config.MIN_SHIFT_DAYS;
-                        const maxShift = config.MAX_SHIFT_DAYS;
-                        
-                        // Calculate distance to nearest preferred W/O
-                        // Assumes emp.prefWO is 0-6 (Sun-Sat)
-                        let distToPref = (emp.prefWO - currentDayOfWeek + 7) % 7;
-                        if (distToPref === 0) distToPref = 0; 
-                        
-                        // A. Early Exit (Reduction) logic
-                        // If strict Min met, and today IS Pref W/O, take it.
-                        // "REDUCING 4 MORE DAYS" implies significant cut allowed if aligned.
-                        if (streak >= minShift && isPrefWODay && daysWorked >= 5) {
+                    // --- 2. PRIORITY STABILITY: PREF-1 ADJUSTMENT ---
+                    // If we have worked 6 days, and tomorrow is Pref W/O (Day 7 work), 
+                    // we prioritize taking W/O TODAY (Day 6 work) to reduce the gap.
+                    // This aligns with "reducing w/o day by -1" to avoid gaps > 6.
+                    else if (emp.daysSinceWO >= 6 && isPrefMinus1) {
+                        forceWO = true;
+                        note += "[Pref-1 Adj] ";
+                    }
+
+                    // --- 3. TARGET STABILITY: PREF W/O ---
+                    // If we have worked 5 days (gap=5) or 6 days (gap=6), take Pref W/O.
+                    else if (emp.daysSinceWO >= 5 && isPrefWODay) {
+                        forceWO = true;
+                        note += "[Pref Stable] ";
+                    }
+
+                    // --- 4. C-SHIFT EXCEPTIONS (Only if not forced by above) ---
+                    // If none of the above triggered, we continue working.
+                    // But C-shift has logic to "Extend... to reach preferred W/O".
+                    // However, Rule #2 (Pref-1 Adj) specifically prevents extending if it means working 7 days just to hit Pref.
+                    // So C-shift will naturally fall into Rule #2 or #1.
+                    
+                    // Specific C-shift early exit logic (Reduction)
+                    else if (!forceWO && emp.currentShift === 'C') {
+                        if (emp.currentStreak >= config.MIN_SHIFT_DAYS && isPrefWODay && emp.daysSinceWO >= 5) {
                              forceWO = true;
                              note += "[Pref C-Red] ";
                         }
-                        
-                        // B. Max Limit / Extension logic
-                        else if (streak >= maxShift) {
-                             // We are at or past soft cap.
-                             // If today is Pref W/O, take it.
-                             if (isPrefWODay && daysWorked >= 5) {
-                                 forceWO = true;
-                                 note += "[Pref C-Max] ";
-                             }
-                             else {
-                                 // Today is NOT Pref W/O.
-                                 // Can we extend to reach it?
-                                 // We need to know if Pref W/O is reachable within:
-                                 // 1. Extension limit (say +3 days)
-                                 // 2. Global limit (work < 8 days)
-                                 
-                                 // distToPref is days until next Pref W/O.
-                                 // e.g. distToPref = 2 means wait 2 days, then W/O.
-                                 
-                                 const potentialTotalWork = daysWorked + distToPref;
-                                 const potentialTotalStreak = streak + distToPref;
-                                 
-                                 // Allow extension if:
-                                 // 1. It lands on Pref W/O
-                                 // 2. Total work streak doesn't exceed 7 days (so 8th is off)
-                                 // 3. Shift streak doesn't go wild (e.g. +3 over max)
-                                 if (potentialTotalWork <= 7 && distToPref <= 3) {
-                                     // Extend! Do NOT force W/O.
-                                     // note += "[Extending] ";
-                                 } else {
-                                     // Cannot reach comfortably. Force Exit.
-                                     forceWO = true;
-                                     note += "[Max C-Limit] ";
-                                 }
-                             }
-                        }
-                    }
-
-                    // --- 3. PREF W/O (Non-C) ---
-                    if (!forceWO && emp.currentShift !== 'C' && emp.daysSinceWO >= 5 && isPrefWODay) {
-                         if (emp.currentStreak >= config.MIN_SHIFT_DAYS) {
-                            forceWO = true;
-                            note += "[Pref WO] ";
-                         }
                     }
 
                     // --- EXECUTE W/O ---
@@ -1266,4 +1261,4 @@
         window.onload = init;
     </script>
 </body>
-</html>
+                    </html>
